@@ -211,7 +211,7 @@ class FreemailService(BaseEmailService):
                     continue
 
                 #for mail in mails:
-                 for mail in sorted(emails, key=lambda x: x["id"], reverse=True):
+                for mail in sorted(emails, key=lambda x: x["id"], reverse=True):
                     mail_id = mail.get("id")
                     if not mail_id or mail_id in seen_mail_ids:
                         continue
